@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BaseDataSet" targetNamespace="http://tempuri.org/BaseDataSet.xsd" xmlns:mstns="http://tempuri.org/BaseDataSet.xsd" xmlns="http://tempuri.org/BaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="BaseDataSet" msprop:Generator_DataSetName="BaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtExcelModel" msprop:Generator_RowEvHandlerName="dtExcelModelRowChangeEventHandler" msprop:Generator_RowDeletedName="dtExcelModelRowDeleted" msprop:Generator_RowDeletingName="dtExcelModelRowDeleting" msprop:Generator_RowEvArgName="dtExcelModelRowChangeEvent" msprop:Generator_TablePropName="dtExcelModel" msprop:Generator_RowChangedName="dtExcelModelRowChanged" msprop:Generator_RowChangingName="dtExcelModelRowChanging" msprop:Generator_TableClassName="dtExcelModelDataTable" msprop:Generator_RowClassName="dtExcelModelRow" msprop:Generator_TableVarName="tabledtExcelModel" msprop:Generator_UserTableName="dtExcelModel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="no" msdata:Caption="序号" msprop:Generator_ColumnPropNameInRow="no" msprop:Generator_ColumnPropNameInTable="noColumn" msprop:Generator_ColumnVarNameInTable="columnno" msprop:Generator_UserColumnName="no" type="xs:string" minOccurs="0" />
+              <xs:element name="orderno" msdata:Caption="订单编号" msprop:Generator_ColumnPropNameInRow="orderno" msprop:Generator_ColumnPropNameInTable="ordernoColumn" msprop:Generator_ColumnVarNameInTable="columnorderno" msprop:Generator_UserColumnName="orderno" type="xs:string" minOccurs="0" />
+              <xs:element name="orderdate" msdata:Caption="订单日期" msprop:Generator_ColumnPropNameInRow="orderdate" msprop:Generator_ColumnPropNameInTable="orderdateColumn" msprop:Generator_ColumnVarNameInTable="columnorderdate" msprop:Generator_UserColumnName="orderdate" type="xs:string" minOccurs="0" />
+              <xs:element name="ordertime" msdata:Caption="订单时间" msprop:Generator_ColumnPropNameInRow="ordertime" msprop:Generator_ColumnPropNameInTable="ordertimeColumn" msprop:Generator_ColumnVarNameInTable="columnordertime" msprop:Generator_UserColumnName="ordertime" type="xs:string" minOccurs="0" />
+              <xs:element name="tableno" msdata:Caption="桌台号" msprop:Generator_ColumnPropNameInRow="tableno" msprop:Generator_ColumnPropNameInTable="tablenoColumn" msprop:Generator_ColumnVarNameInTable="columntableno" msprop:Generator_UserColumnName="tableno" type="xs:string" minOccurs="0" />
+              <xs:element name="customcount" msdata:Caption="用餐人数" msprop:Generator_ColumnPropNameInRow="customcount" msprop:Generator_ColumnPropNameInTable="customcountColumn" msprop:Generator_ColumnVarNameInTable="columncustomcount" msprop:Generator_UserColumnName="customcount" type="xs:string" minOccurs="0" />
+              <xs:element name="fooddetail" msdata:Caption="菜品明细" msprop:Generator_ColumnPropNameInRow="fooddetail" msprop:Generator_ColumnPropNameInTable="fooddetailColumn" msprop:Generator_ColumnVarNameInTable="columnfooddetail" msprop:Generator_UserColumnName="fooddetail" type="xs:string" minOccurs="0" />
+              <xs:element name="foodprice" msdata:Caption="菜品单价" msprop:Generator_ColumnPropNameInRow="foodprice" msprop:Generator_ColumnPropNameInTable="foodpriceColumn" msprop:Generator_ColumnVarNameInTable="columnfoodprice" msprop:Generator_UserColumnName="foodprice" type="xs:string" minOccurs="0" />
+              <xs:element name="foodnumber" msdata:Caption="菜品数量" msprop:Generator_ColumnPropNameInRow="foodnumber" msprop:Generator_ColumnPropNameInTable="foodnumberColumn" msprop:Generator_ColumnVarNameInTable="columnfoodnumber" msprop:Generator_UserColumnName="foodnumber" type="xs:string" minOccurs="0" />
+              <xs:element name="orderprice" msdata:Caption="订单金额" msprop:Generator_ColumnPropNameInRow="orderprice" msprop:Generator_ColumnPropNameInTable="orderpriceColumn" msprop:Generator_ColumnVarNameInTable="columnorderprice" msprop:Generator_UserColumnName="orderprice" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
