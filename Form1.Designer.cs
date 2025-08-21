@@ -37,7 +37,7 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.bar3 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnexcelimport = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.gcdata = new DevExpress.XtraGrid.GridControl();
             this.gvdata = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -58,6 +58,9 @@
             this.colfoodprice = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colfoodnumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colorderprice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnsavetosqlserver = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvdata)).BeginInit();
@@ -82,9 +85,12 @@
             this.barManager1.DockControls.Add(this.barDockControlRight);
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barButtonItem2});
-            this.barManager1.MaxItemId = 2;
+            this.btnexcelimport,
+            this.barButtonItem2,
+            this.btnsavetosqlserver,
+            this.barStaticItem1,
+            this.barStaticItem2});
+            this.barManager1.MaxItemId = 5;
             this.barManager1.StatusBar = this.bar3;
             // 
             // barDockControlTop
@@ -125,8 +131,11 @@
             this.bar1.DockCol = 0;
             this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnexcelimport, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnsavetosqlserver),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem2)});
             this.bar1.Text = "Tools";
             // 
             // bar3
@@ -140,13 +149,13 @@
             this.bar3.OptionsBar.UseWholeRow = true;
             this.bar3.Text = "Status bar";
             // 
-            // barButtonItem1
+            // btnexcelimport
             // 
-            this.barButtonItem1.Caption = "EXCEL导入";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnexcelimport.Caption = "EXCEL导入";
+            this.btnexcelimport.Id = 0;
+            this.btnexcelimport.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnexcelimport.Name = "btnexcelimport";
+            this.btnexcelimport.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // barButtonItem2
             // 
@@ -331,6 +340,24 @@
             this.colorderprice.VisibleIndex = 9;
             this.colorderprice.Width = 112;
             // 
+            // btnsavetosqlserver
+            // 
+            this.btnsavetosqlserver.Caption = "保存入数据库";
+            this.btnsavetosqlserver.Id = 2;
+            this.btnsavetosqlserver.Name = "btnsavetosqlserver";
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "数据库状态";
+            this.barStaticItem1.Id = 3;
+            this.barStaticItem1.Name = "barStaticItem1";
+            // 
+            // barStaticItem2
+            // 
+            this.barStaticItem2.Caption = "颜色说明：行的背景为黄色代表";
+            this.barStaticItem2.Id = 4;
+            this.barStaticItem2.Name = "barStaticItem2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -372,7 +399,7 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnexcelimport;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraGrid.GridControl gcdata;
         private DevExpress.XtraGrid.Views.Grid.GridView gvdata;
@@ -393,6 +420,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colfoodprice;
         private DevExpress.XtraGrid.Columns.GridColumn colfoodnumber;
         private DevExpress.XtraGrid.Columns.GridColumn colorderprice;
+        private DevExpress.XtraBars.BarButtonItem btnsavetosqlserver;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem2;
     }
 }
 
