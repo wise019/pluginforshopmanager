@@ -249,6 +249,38 @@ namespace DatabaseHelper
             }
         }
 
+        /// <summary>
+        /// 判断给定的桌台号是否在数据库中存在
+        /// </summary>
+        /// <param name="tableName">桌台号</param>
+        /// <returns>存在返回 true</returns>
+        public bool TableNameExists(string tableName)
+        {
+            const string sql = "SELECT COUNT(1) FROM t_table WHERE name = @name";
+            using (var conn = GetConnection())
+            using (var cmd = new SqlCommand(sql, conn))
+            {
+                cmd.Parameters.AddWithValue("@name", tableName);
+                return Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+            }
+        }
+
+        /// <summary>
+        /// 判断给定的菜品名称是否在数据库中存在
+        /// </summary>
+        /// <param name="dishName">菜品名称</param>
+        /// <returns>存在返回 true</returns>
+        public bool DishNameExists(string dishName)
+        {
+            const string sql = "SELECT COUNT(1) FROM t_dish WHERE name = @name";
+            using (var conn = GetConnection())
+            using (var cmd = new SqlCommand(sql, conn))
+            {
+                cmd.Parameters.AddWithValue("@name", dishName);
+                return Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+            }
+        }
+
         #endregion
 
 
