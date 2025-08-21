@@ -254,9 +254,9 @@ namespace DatabaseHelper
         /// </summary>
         /// <param name="tableName">桌台号</param>
         /// <returns>存在返回 true</returns>
-        public bool TableNameExists(string tableName)
+        public bool DiningTableExists(string tableName)
         {
-            const string sql = "SELECT COUNT(1) FROM t_table WHERE name = @name";
+            const string sql = "SELECT COUNT(1) FROM t_diningtable WHERE f_No = @name OR f_name = @name";
             using (var conn = GetConnection())
             using (var cmd = new SqlCommand(sql, conn))
             {
@@ -270,9 +270,9 @@ namespace DatabaseHelper
         /// </summary>
         /// <param name="dishName">菜品名称</param>
         /// <returns>存在返回 true</returns>
-        public bool DishNameExists(string dishName)
+        public bool GoodsNameExists(string dishName)
         {
-            const string sql = "SELECT COUNT(1) FROM t_dish WHERE name = @name";
+            const string sql = "SELECT COUNT(1) FROM t_Goods WHERE f_name = @name";
             using (var conn = GetConnection())
             using (var cmd = new SqlCommand(sql, conn))
             {

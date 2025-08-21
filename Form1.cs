@@ -52,8 +52,8 @@ namespace ExcelToStore
                     dr.orderprice = row.OrderAmount.ToString(CultureInfo.InvariantCulture);
                     baseDataSet.dtExcelModel.AdddtExcelModelRow(dr);
 
-                    bool tableExists = _dbHelper.TableNameExists(row.TableName);
-                    bool dishExists = _dbHelper.DishNameExists(row.ItemName);
+                    bool tableExists = _dbHelper.DiningTableExists(row.TableName);
+                    bool dishExists = _dbHelper.GoodsNameExists(row.ItemName);
                     if (!tableExists)
                         missingTables.Add(row.TableName);
                     if (!dishExists)
