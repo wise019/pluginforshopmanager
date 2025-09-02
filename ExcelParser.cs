@@ -167,7 +167,7 @@ namespace ExcelToStore
                             return new List<OrderRow>();
                         }
 
-                        worksheet = package.Workbook.Worksheets[0];
+                        worksheet = package.Workbook.Worksheets[1];
                         Logger.Debug("使用第一个工作表: {0}", worksheet.Name);
                     }
                     else
